@@ -187,6 +187,50 @@ topButton.addEventListener("click", () => {
 });
 
 // ===========================================
+// Theme Toggle
+// ===========================================
+
+const themeToggle = document.getElementById("theme-toggle");
+
+function updateThemeToggleIcon() {
+
+    if (!themeToggle) return;
+
+    const isLight = document.documentElement.getAttribute("data-theme") === "light";
+
+    themeToggle.textContent = isLight ? "☀️" : "🌙";
+
+}
+
+updateThemeToggleIcon();
+
+if (themeToggle) {
+
+    themeToggle.addEventListener("click", () => {
+
+        const isLight = document.documentElement.getAttribute("data-theme") === "light";
+
+        if (isLight) {
+
+            document.documentElement.removeAttribute("data-theme");
+
+            localStorage.setItem("theme", "dark");
+
+        } else {
+
+            document.documentElement.setAttribute("data-theme", "light");
+
+            localStorage.setItem("theme", "light");
+
+        }
+
+        updateThemeToggleIcon();
+
+    });
+
+}
+
+// ===========================================
 // Console Message 😎
 // ===========================================
 

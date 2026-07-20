@@ -16,10 +16,34 @@
     --surface-light:#202020;
     --text:#F5F5F5;
     --text-light:#BDBDBD;
+    --header-bg:#111;
+    --footer-border:#333;
+    --footer-text:#888;
 
     --radius:14px;
 
     --max-width:1200px;
+
+}
+
+[data-theme="light"]{
+
+    --background:#F5F5F5;
+    --surface:#FFFFFF;
+    --surface-light:#ECECEC;
+    --text:#141414;
+    --text-light:#4A4A4A;
+    --header-bg:#FFFFFF;
+    --footer-border:#DDDDDD;
+    --footer-text:#666666;
+
+}
+
+body,
+.header,
+footer{
+
+    transition:background .3s, color .3s, border-color .3s;
 
 }
 
@@ -87,7 +111,7 @@ a{
 
     z-index:999;
 
-    background:#111;
+    background:var(--header-bg);
 
     border-bottom:2px solid var(--primary);
 
@@ -506,9 +530,53 @@ footer{
 
     text-align:center;
 
-    border-top:1px solid #333;
+    border-top:1px solid var(--footer-border);
 
-    color:#888;
+    color:var(--footer-text);
+
+}
+
+/* ===========================
+   THEME TOGGLE
+=========================== */
+
+.theme-toggle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:42px;
+
+    height:42px;
+
+    margin-left:20px;
+
+    border:1px solid var(--surface-light);
+
+    border-radius:50%;
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    font-size:18px;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    transition:background .3s, color .3s, border-color .3s, transform .2s;
+
+}
+
+.theme-toggle:hover{
+
+    transform:scale(1.08);
+
+    border-color:var(--primary);
 
 }
 

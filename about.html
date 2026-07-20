@@ -12,6 +12,14 @@
     <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
+    <script>
+    (function(){
+        var saved = localStorage.getItem('theme');
+        var theme = saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+    </script>
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
 
@@ -148,6 +156,8 @@
             <a href="contact.html">Contact</a>
 
         </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
 
     </div>
 
