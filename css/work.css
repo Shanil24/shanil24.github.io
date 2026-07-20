@@ -4,15 +4,45 @@
 }
 
 .project-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: var(--radius-md);
-  padding: 1rem;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
 }
 
 .project-card img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.project-info h2 {
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.project-info p {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.project-icon {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.project-info a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 48rem) {
