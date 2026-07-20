@@ -1,0 +1,49 @@
+/* ===========================
+   CONTACT PAGE
+=========================== */
+
+.contact-main{
+
+    padding:70px 0;
+
+}
+
+.contact-heading{
+
+    font-family:'Orbitron';
+
+    margin-bottom:30px;
+
+}
+
+.contact-section{
+
+    margin-bottom:50px;
+
+}
+
+.contact-text{
+
+    color:var(--text-light);
+
+    margin-bottom:20px;
+
+}
+
+.contact-list{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.contact-link{
+
+    color:var(--primary);
+
+}
