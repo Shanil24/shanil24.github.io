@@ -1,3 +1,12 @@
+.work-main {
+  padding: 70px 0;
+}
+
+.work-heading {
+  font-family: 'Orbitron';
+  margin-bottom: 40px;
+}
+
 .projects-grid {
   display: grid;
   gap: 1.5rem;

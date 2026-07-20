@@ -365,6 +365,8 @@ section h2{
 .project-card,
 .skills-grid div{
 
+    display:block;
+
     background:var(--surface);
 
     padding:30px;

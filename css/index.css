@@ -1,0 +1,21 @@
+/* ===========================
+   HOME PAGE
+=========================== */
+
+.hero-actions{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid var(--primary);
+
+}
